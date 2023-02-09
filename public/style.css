@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+html,body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(48, 10, 36);
+    color: white;
+    font-family: monospace;
+    font-size: 16px;
+
+}
+.terminal {
+    padding: 5px;
+
+}
+.disabled {
+    pointer-events: none !important;
+}
+.input_line {
+    display: flex;
+    flex-wrap: wrap;
+    cursor: text;
+}
+.user {
+    color: yellowgreen;
+    font-weight: bold;
+}
+.Command_input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: yellow;
+    font-family: monospace;
+    font-size: 16px;
+    font-weight: bold;
+    word-wrap: break-word;
+    word-break: break-all;
+    min-width: 50%;
+    flex: 1;
+}
+.output_line {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.blink {
+    margin-left: -5px;
+    width: 5px;
+    background-color: white;
+    animation: blinking 1s infinite ease-in-out;
+} 
+@keyframes blinking {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

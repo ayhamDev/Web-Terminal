@@ -1,0 +1,45 @@
+{
+  "name": "web-terminal",
+  "version": "1.0.0",
+  "description": "web based terminal",
+  "bin": "index.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon download.js",
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "build": "pkg .",
+    "test:spawn": "node test/spawn.test.js"
+  },
+  "keywords": [
+    "terminal",
+    "web",
+    "control",
+    "pc",
+    "lan"
+  ],
+  "author": "ayham",
+  "license": "MIT",
+  "dependencies": {
+    "base64-arraybuffer": "^1.0.2",
+    "express": "^4.18.2",
+    "ip": "^1.1.8",
+    "node-fetch": "^2.6.7",
+    "request": "^2.88.2",
+    "socket.io": "^4.5.3"
+  },
+  "pkg": {
+    "assets": [
+      "./node_modules/**/*",
+      "./view/**/*",
+      "./public/**/*"
+    ],
+    "targets": [
+      "node14-win-x64"
+    ],
+    "outputPath": "dist"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
