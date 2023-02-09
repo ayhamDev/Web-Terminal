@@ -18,7 +18,7 @@ on this page [Release](https://github.com/ayhamDev/Web-Terminal/releases).
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/ayhamDev/Web-Terminal.git
 ```
 
 Go to the project directory
@@ -37,12 +37,6 @@ Start the server
 
 ```bash
   npm run dev
-```
-
-```
-    Server is Listening on:
-    http://localhost:3000
-    http://192.168.8.197:3000
 ```
 
 # build
